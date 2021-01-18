@@ -1,0 +1,6 @@
+for pre trained model reusing, two major methods could be used.
+
+1### use the convolution base of the pre-trained model then use the predicted output to pass through a new decision machine.
+2### add the pre-trained model and new decision machine to a new model (but the pre-trained model trainnable parameters should be FROZEN)
+3### since the top feature extraction layer usually contains more abstract information, so fine tune is make this layer UNFROZEN and train them with classifier.
+
